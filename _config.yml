@@ -13,7 +13,7 @@ font:
   sans-serif: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" 
   # Heading copy
   serif-name: 'Open Sans'
-  serif: "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap"
+  serif: ""
 
 # Privacy Policy and Terms of Service page
 state: Florida
@@ -29,17 +29,17 @@ btn-custom-primary:
   text-color: "#000000"
   bg: "#F6AD54"
   border-color: "#F6AD54"
-  hover-text-color: "#ffffff"
-  hover-bg: "#123440"
-  hover-border-color: "#123440"
+  hover-text-color: "#000000"
+  hover-bg: "#d0954d"
+  hover-border-color: "#d0954d"
 
 btn-custom-secondary:
   text-color: "#000000"
   bg: "#ffffff"
   border-color: "#ffffff"
   hover-text-color: "#000000"
-  hover-bg: "#fcb259"
-  hover-border-color: "#fcb259"
+  hover-bg: "#dddddd"
+  hover-border-color: "#dddddd"
 
 btn-border-radius: "4px"
 
