@@ -1,0 +1,39 @@
+---
+layout: default
+permalink: /services/
+title: Services
+meta_description: Experience the power of our holistic healing services. Find balance, rejuvenation, and inner peace through our range of offerings. From Reiki healing to energy work and more, our skilled practitioners in Salt Lake City are dedicated to supporting your well-being. Discover the transformative benefits of our services. 
+
+main-image: reiki-relieve-stress.jpeg
+---
+
+<div class="py-vh-3 w-100 overflow-hidden">
+  <div class="container">
+    <div class="row d-flex ">
+      <div class="col-lg-7">
+        
+        <h2 class="display-6">
+          Training and Healing Services
+        </h2>
+        {% for cat in site.category-list %}  
+        <ul class="list-unstyled">
+          {% for page in site.pages %}
+            {% if page.resource == true %}
+              {% for pc in page.categories %}
+                {% if pc == cat %}
+                  <li class="py-2">
+                    <a href="{{ page.url }}" class="link-fancy">{{ page.title }}</a>
+                  </li>
+                {% endif %}   <!-- cat-match-p -->
+              {% endfor %}  <!-- page-category -->
+            {% endif %}   <!-- resource-p -->
+          {% endfor %}  <!-- page -->
+        </ul>
+        {% endfor %}  <!-- cat -->
+      </div>
+      <!-- col-lg-5 FORM-->
+      {% include form.html %}
+
+    </div>
+  </div>
+</div>
