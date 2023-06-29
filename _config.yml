@@ -55,7 +55,7 @@ form:
 # Local Business Schema
 schema:
   # name: Same as title above
-  image:
+  image: "https://handymanserviceskissimmee.com/img/logo-all-pro.png"
   # telephone: Same as phone above
   priceRange: "$"
   address:
