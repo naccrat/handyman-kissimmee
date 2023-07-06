@@ -1,7 +1,6 @@
 <footer>
   <div class="container small border-top">
     <div class="row py-5 d-flex justify-content-between">
-
       <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
         <h3 class="h6 mb-3">Navigation</h3>
         <ul class="nav flex-column">
@@ -24,7 +23,6 @@
           </li>
         </ul>
       </div>
-
       <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
         <h3 class="h6 mb-3">Services</h3>
         {% for cat in site.category-list %}  
@@ -43,7 +41,6 @@
         </ul>
         {% endfor %}
       </div>
-
       <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
         <h3 class="h6 mb-3">Articles</h3>
         <ul class="nav flex-column">
@@ -57,7 +54,7 @@
       <div class="col-12 col-lg-6 col-xl-3 p-5">
         {% if site.logo %}
         <a href="{{ site.url }}">
-          <img src="{{ site.url }}/img/{{ site.logo }}" width="100%" alt="Logo for {{ site.title }}">
+          <img src="{{ site.url }}/img/{{ site.logo }}" width="{{ site.logo-width }}" alt="Logo for {{ site.title }}">
         </a>
         {% else %}
         <h3 class="h6 mb-3"><a href="{{ site.url }}" class="text-decoration-none">{{ site.title }}</a></h3>
@@ -71,21 +68,12 @@
       </div>
     </div>
   </div>
-
-  
-
-  <div class="container text-center py-3 small">© 2023 All Rights Reserved | <a href="{{ site.url }}" class="link-fancy">{{ site.title }}</a> | Designed by <a href="https://325studio.com" class="link-fancy" target="_blank">325 Studio</a> | Created by <a href="https://templatedeck.com" class="link-fancy" target="_blank">Templatedeck</a>
+  <div class="container text-center py-3 small">
+    © 2023 All Rights Reserved | <a href="{{ site.url }}" class="link-fancy">{{ site.title }}</a> | Managed by <a href="https://325studio.com" class="link-fancy" target="_blank">325 Studio</a>
   </div>
 </footer>
-
 <script src="{{ site.url }}/js/bootstrap.bundle.min.js"></script>
 <script src="{{ site.url }}/js/aos.js"></script>
-<!-- <script>
-AOS.init({
-  duration: 800, // values from 0 to 3000, with step 50ms
-});
-</script> -->
-
 <script>
   let scrollpos = window.scrollY
   const header = document.querySelector(".navbar")
