@@ -1,8 +1,11 @@
 url: https://handymanserviceskissimmee.com
 title: All-Pro Handyman Kissimmee
 phone: (407) 519-2147
+logo: logo-all-pro.png
+logo-width: 110
 
 google-analytics: G-76GKRQW687
+site-author: 325 Studio
 
 category-list: [services]
 
@@ -21,7 +24,8 @@ state: Florida
 # Custom Navbar Colors
 navbar-colors:
   bg: "#ffffff"
-  menu-color: "#000000"
+  menu-color: "#000000" # text color
+  active-color: "#000000" # Set to the same as menu-color for now.
   menu-hover-color: "19495B"
   
 # Custom button
